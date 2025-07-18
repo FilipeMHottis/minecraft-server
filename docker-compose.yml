@@ -21,7 +21,7 @@ services:
     volumes:
       - ./minecraft-data:/data
 
-  # playit.gg client (opcional - explicado depois)
+  # playit.gg client
   playit:
     image: ghcr.io/playit-cloud/playit-agent:latest
     container_name: playit-agent
