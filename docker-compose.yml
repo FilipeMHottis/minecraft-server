@@ -10,10 +10,14 @@ services:
     environment:
       EULA: "TRUE"
       ENABLE_RCON: "true"
-      TYPE: "VANILLA" # Use "PAPER" for better performance and features
+      TYPE: "PAPER" # Use "PAPER" for better performance and features
       VERSION: "LATEST" # Use "LATEST" for the latest version or specify a version like "1.20.2"
       ONLINE_MODE: "true" # Set to false if you want to allow cracked clients
       MEMORY: "2G" # Adjust memory allocation as needed
+      VIEW_DISTANCE: "10" # Adjust view distance for performance
+      DIFFICULTY: "hard" # Set game difficulty (peaceful, easy, normal, hard)
+      # SEED: "123456789" # Optional: Set a specific world seed
+      # HARDCORE: "false" # Set to true for hardcore mode
     volumes:
       - ./minecraft-data:/data
 
