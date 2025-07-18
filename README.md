@@ -38,8 +38,8 @@ chmod +x *.sh
 7. Criar o túnel para Minecraft Java no Playit.gg com as seguintes informações:
 ```yaml
   - **Service type:** Minecraft Java Edition (Game)  
-   - **Local port:** 25565 (porta padrão do Minecraft Java)  
-   - **Name:** (Opcional, nome para identificar seu túnel)
+  - **Local port:** 25565 (porta padrão do Minecraft Java)  
+  - **Name:** (Opcional, nome para identificar seu túnel)
 ```
 8. Salve o túnel. O Playit vai gerar um endereço público (tipo `abc123.playit.gg`) que seus amigos poderão usar para entrar no seu servidor!
 
