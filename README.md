@@ -26,8 +26,9 @@ Servidor Minecraft Java Edition (Vanilla ou Paper) com:
 5. Abra o arquivo `docker-compose.yml` e edite:
 
 ```yaml
-environment:
-  SECRET_KEY: your_secret_key_here
+playit:
+  environment:
+    SECRET_KEY: your_secret_key_here
 ```
 
 ---
