@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft-vanilla
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      ENABLE_RCON: "true"
+      TYPE: "VANILLA"
+      VERSION: "LATEST"
+      ONLINE_MODE: "true" # Set to false if you want to allow cracked clients
+    volumes:
+      - ./minecraft-data:/data
+
+  # playit.gg client (opcional - explicado depois)
+  playit:
+    image: ghcr.io/playit-cloud/playit-agent:latest
+    container_name: playit-agent
+    network_mode: "host"
+    environment:
+      SECRET_KEY: your_secret_key_here
+    volumes:
+      - ./playit:/root/.playit
