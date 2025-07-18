@@ -10,9 +10,10 @@ services:
     environment:
       EULA: "TRUE"
       ENABLE_RCON: "true"
-      TYPE: "VANILLA"
-      VERSION: "LATEST"
+      TYPE: "VANILLA" # Use "PAPER" for better performance and features
+      VERSION: "LATEST" # Use "LATEST" for the latest version or specify a version like "1.20.2"
       ONLINE_MODE: "true" # Set to false if you want to allow cracked clients
+      MEMORY: "2G" # Adjust memory allocation as needed
     volumes:
       - ./minecraft-data:/data
 
