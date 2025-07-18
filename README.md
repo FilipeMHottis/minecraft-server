@@ -22,7 +22,7 @@ Servidor Minecraft Java Edition (Vanilla ou Paper) com:
 1. Acesse: https://playit.gg/login  
 2. Faça login ou crie uma conta  
 3. Crie seu agente Docker: https://playit.gg/account/agents/new-docker  
-4. Copie sua `SECRET_KEY` (começa com `ptc_...`)  
+4. Copie sua `SECRET_KEY` 
 5. Abra o arquivo `docker-compose.yml` e edite:
 
 ```yaml
