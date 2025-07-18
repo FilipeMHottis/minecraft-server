@@ -97,8 +97,9 @@ chmod +x *.sh
 - Para suporte a plugins, edite no `docker-compose.yml`:
   
 ```yaml
-environment:
-  TYPE: PAPER
+minecraft:
+  environment:
+    TYPE: PAPER
 ```
 
 - Isso permite usar plugins como:
