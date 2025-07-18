@@ -40,10 +40,21 @@ chmod +x *.sh
 ./start.sh
 ```
 
-8. Criar o túnel para Minecraft Java no Playit.gg com as seguintes informações:
-- **Service type:** Minecraft Java Edition (Game)  
-- **Local port:** 25565 (porta padrão do Minecraft Java)  
-- **Name:** (Opcional, nome para identificar seu túnel)
+8. Criar os túneis no Playit.gg:
+
+- Para Minecraft Java:
+
+  - **Service type:** Minecraft Java Edition (Game)  
+  - **Local port:** 25565 (porta padrão do Minecraft Java)  
+  - **Name:** (Opcional, para identificar o túnel)
+
+- Caso use o plugin GeyserMC, também crie um túnel para Minecraft Bedrock:
+
+  - **Service type:** Minecraft Bedrock Edition (Game)  
+  - **Local port:** 19132 (porta padrão do Minecraft Bedrock)  
+  - **Name:** (Opcional)
+
+**Observação:** A porta 19132 já vem aberta por padrão no container, mas é necessário criar o túnel para que o Playit faça o redirecionamento corretamente.
 
 9. Salve o túnel. O Playit vai gerar um endereço público (tipo `abc123.playit.gg`) que seus amigos poderão usar para entrar no seu servidor!
 
