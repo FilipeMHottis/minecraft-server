@@ -113,6 +113,50 @@ chmod +x *.sh
 
 ---
 
+## 🛠️ Comandos úteis para gerenciamento
+
+### 📜 Verificar os logs do servidor
+
+Use este comando para verificar se o servidor iniciou corretamente:
+
+```bash
+docker logs -f minecraft-vanilla
+```
+
+Isso mostra os logs em tempo real. Para sair, pressione Ctrl+C.
+
+Se quiser ver apenas as últimas linhas:
+
+```bash
+docker logs --tail 50 minecraft-vanilla
+```
+
+### 💬 Enviar comandos diretamente ao servidor (via RCON)
+
+Se o `ENABLE_RCON` estiver ativado no `docker-compose.yml`, você pode usar o `rcon-cli` para enviar comandos ao servidor Minecraft:
+
+```bash
+docker exec -i minecraft-vanilla rcon-cli
+```
+
+Depois de rodar esse comando, você verá um prompt como este:
+
+```
+>
+```
+
+Agora digite comandos do Minecraft, como:
+
+```bash
+>say Servidor online!
+>gamemode creative SeuNick
+>list
+```
+
+> Para sair do prompt, pressione `Ctrl+C`.
+
+---
+
 ## 💬 Dicas e Extras
 
 - Para suporte a plugins, edite no `docker-compose.yml`:
