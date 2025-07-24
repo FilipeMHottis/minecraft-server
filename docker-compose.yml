@@ -3,7 +3,7 @@ version: "3.8"
 services:
   minecraft:
     image: itzg/minecraft-server:latest
-    container_name: minecraft-vanilla
+    container_name: minecraft
     ports:
       - "25565:25565/tcp"
       - "19132:19132/udp" # To Bedrock Edition
