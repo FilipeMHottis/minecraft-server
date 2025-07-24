@@ -10,6 +10,7 @@ services:
     environment:
       EULA: "TRUE"
       ENABLE_RCON: "true"
+      SERVER_NAME: "Minecraft Server Vanilla" # Name of Server
       TYPE: "VANILLA" # Use "PAPER" for better performance and features
       VERSION: "LATEST" # Use "LATEST" for the latest version or specify a version like "1.20.2"
       ONLINE_MODE: "true" # Set to false if you want to allow cracked clients
