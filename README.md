@@ -120,7 +120,7 @@ chmod +x *.sh
 Use este comando para verificar se o servidor iniciou corretamente:
 
 ```bash
-docker logs -f minecraft-vanilla
+docker logs -f minecraft
 ```
 
 Isso mostra os logs em tempo real. Para sair, pressione Ctrl+C.
@@ -128,7 +128,7 @@ Isso mostra os logs em tempo real. Para sair, pressione Ctrl+C.
 Se quiser ver apenas as últimas linhas:
 
 ```bash
-docker logs --tail 50 minecraft-vanilla
+docker logs --tail 50 minecraft
 ```
 
 ### 💬 Enviar comandos diretamente ao servidor (via RCON)
@@ -136,7 +136,7 @@ docker logs --tail 50 minecraft-vanilla
 Se o `ENABLE_RCON` estiver ativado no `docker-compose.yml`, você pode usar o `rcon-cli` para enviar comandos ao servidor Minecraft:
 
 ```bash
-docker exec -i minecraft-vanilla rcon-cli
+docker exec -i minecraft rcon-cli
 ```
 
 Depois de rodar esse comando, você verá um prompt como este:
